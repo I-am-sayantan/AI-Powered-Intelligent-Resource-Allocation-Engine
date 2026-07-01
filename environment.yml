@@ -1,0 +1,33 @@
+name: re-alc
+channels:
+- conda-forge
+- pytorch
+dependencies:
+- python=3.11
+- pip
+# --- Core scientific stack ---
+- numpy
+- pandas
+- scipy
+- pyarrow
+- scikit-learn
+# --- Gradient boosting ---
+- xgboost
+- lightgbm
+- catboost
+# --- Deep learning ---
+- pytorch
+# --- Serialization ---
+- joblib
+# --- Testing ---
+- pytest
+# --- Pip-only packages ---
+- pip:
+  - fastapi>=0.110
+  - "uvicorn[standard]>=0.29"
+  - pydantic>=2.6
+  - pydantic-settings>=2.2
+  - pytorch-tabnet>=4.1
+  - shap>=0.45
+  - httpx>=0.27
+  - python-multipart>=0.0.9
